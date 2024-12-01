@@ -4,7 +4,7 @@
 # 💡 allows u to use views like objects
 # 💡 views is callable and use classes instance, which is not found in function based views
 
-# class based view VS function based view
+# class based view VS function based view :->
 
 
 def function_view(request):
