@@ -21,7 +21,7 @@ Class Menu(models.Model):
     'myapp.apps.MyappConfig',
     ...
     ]
-2. `cd manage.py makemigrations` (migration file initialized ✅)
+2. ` manage.py makemigrations` (migration file initialized ✅)
 3. `python manage.py migrate`
 """
 # 💡second : To access the model using query and add data :
