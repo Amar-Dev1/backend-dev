@@ -18,7 +18,7 @@ Class Menu(models.Model):
 """
 1. add the model inside settings.py (project-level) : 
     INSTALLED_APPS = [
-    'myapp.apps.myappConfig',
+    'myapp.apps.MyappConfig',
     ...
     ]
 2. `cd manage.py makemigrations` (migration file initialized ✅)
