@@ -46,10 +46,10 @@
 
 # 📑Notes :->
 """
-💡on_delete: option specifies the behavior in case the associated object in the primary model is deleted
-💡CASCADE: deletes the object containing the ForeignKey
+💡on_delete: option specifies the behavior in case the associated object in the primary model is deleted.
+💡CASCADE: deletes the object containing the ForeignKey.
 💡PROTECT: Prevent deletion of the referenced object.
-💡RESTRICT: Prevent deletion of the referenced object by raising RestrictedError
+💡RESTRICT: Prevent deletion of the referenced object by raising RestrictedError.
 """
 
 # 📑many to many :->
