@@ -1,4 +1,5 @@
 # 📑Creating Models :->
+# 💡 by using the ORM , I can use Models and deal with database without writing queries 👍
 
 # 📑Introduction example :->
 """
