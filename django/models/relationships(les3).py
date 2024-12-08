@@ -6,7 +6,6 @@
 
 
 # 📑one to one :->
-
 """
 💡one record in a table is related to exactly one record in another table
 💡we implement it using OneToOneField
