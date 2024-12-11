@@ -6,7 +6,6 @@
 
 # class based view VS function based view :->
 
-
 def function_view(request):
     if request.method == "GET":
         # view logic
