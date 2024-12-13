@@ -31,4 +31,9 @@ return render(request, "form.html", context)
 
 """
 
-# ❗ Note :-> make sure that you register the model in admin.py ❗
+# ❗ Notes :-> 
+"""
+1. make sure that you register the model in admin.py ❗
+2. make sure that you implement the migrations ❗
+
+"""
