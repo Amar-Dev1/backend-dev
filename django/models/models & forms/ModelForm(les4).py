@@ -30,3 +30,5 @@ context= {"form" : form}
 return render(request, "form.html", context)
 
 """
+
+# ❗ Note :-> make sure that you register the model in admin.py ❗
