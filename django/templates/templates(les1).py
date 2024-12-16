@@ -4,6 +4,9 @@
 💡templates represent a `presentation layer` in the (3 tire architecture).
 """
 
+# 📑To make templates run :->
+# 💡add the template to the templates list in `Settings.py`.
+
 # 📑Dynamic html content:->
 """
 💡we can use django template language (DTL) or jinja2 to create dynamic html content
