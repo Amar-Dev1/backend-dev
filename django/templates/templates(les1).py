@@ -5,7 +5,7 @@
 """
 
 # 📑To make templates run :->
-# 💡add the template to the templates list in `Settings.py`.
+# 💡in TEMPLATES list, add the `templates` value to the `DIRS` in `Settings.py`.
 
 # 📑Dynamic html content:->
 """
