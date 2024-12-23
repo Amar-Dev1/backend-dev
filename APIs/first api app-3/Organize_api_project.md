@@ -15,3 +15,14 @@
 - split the settings into multiple settings files
 ### 7️⃣ Bussiness logic in models
 - place the business logic into the models, instead of views
+
+## 💡 what is pipenv
+- pipenv is a tool that helps you to manage your project dependencies.
+- it creates a virtual environment for your project and installs the dependencies in that environment.
+- it also creates a requirements.txt file that lists all the dependencies of your project.
+
+## 💡how to use pipenv
+- install pipenv using pip install pipenv
+- create a new project using pipenv install
+- install the dependencies using pipenv install
+- run the project using pipenv run python app.py
