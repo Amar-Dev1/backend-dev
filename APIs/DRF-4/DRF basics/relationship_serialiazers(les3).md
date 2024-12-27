@@ -31,7 +31,6 @@ class MenuItemSerializer(...):
         ...
         fields = ['...',category]
 
-
 # views.py
 ...
 # this is to display ..
