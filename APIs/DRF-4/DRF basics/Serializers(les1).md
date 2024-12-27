@@ -1,4 +1,4 @@
-# 📑 Serializers in Django Rest Framework (DRF)
+# 📑 Serializers in `DRF`
 
 ## What are Serializers?
 Serializers are used to convert complex data types (e.g., Django model instances or Python objects) into formats like **JSON** or **XML**, making them suitable for rendering as API responses.
