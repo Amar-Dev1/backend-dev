@@ -17,21 +17,28 @@ Deserializers perform the opposite operation of serializers: they convert data f
 
 ### Simple Serializer Example
 ```python
+# serializers.py
+
 from rest_framework import serializers
 
-class BookSerializer(serializers.Serializer):
+class MenuItemSerializer(serializers.Serializer):
     title = serializers.CharField(max_length=100)
     price = serializers.IntegerField()
+
+    # the output will display only title and price field
+
+# views.py
+from rest_framework.decorators import api_view
+from .serializers import MenuItemSerializer
+from .models import MenuItem
+
+@api_view
+def menu_item(request):
+    items= MenuItem.objects.all()
+    serialized_item = MenuItemSerializer(item,many=True)
+    return Response(serialized_item.data)
+
+    # many=True => is essential when converting a list into JSON data    
 ```
-
-### Model Serializer Example
-```python
-from rest_framework import serializers
-from .models import Book
-
-class BookSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Book
-        fields = ['id', 'title', 'price']
-
-# This serializer integrates with the Book model ✅
+## 💡Note
+- its not required to convert a single object (single item) to `JSON`
