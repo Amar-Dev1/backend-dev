@@ -27,7 +27,7 @@ http://127.0.0.1:8000/api/menu-items/?category=icecream&to_price=5
 - `gte` : `items.filter(price__gte=to_price)` (greater than or equal)
 - `lt` : `items.filter(price__lt=to_price)` (less than)
 - `gt` : `items.filter(price__gt=to_price)` (greater than)
-- `in` : `items.filter(category__title__in=[category_name1, category_nam])
+
 
 ## 💡 Some search commands
 - `contains` : `items.filter(title__contains='icecream')` (search for items contain `icecream`)
