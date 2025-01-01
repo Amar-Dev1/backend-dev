@@ -2,6 +2,7 @@
 
 - 💡 we can use `viewsets` to quick implement CRUD API endpoints
 
+# ❗ After installing `django-filter`
 ## 📑Step 1 : `views.py`
 ```python
 from rest_framework.response import Response from rest_framework import viewsets from .models import MenuItem from .serializers import MenuItemSerializer  
