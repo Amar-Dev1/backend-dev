@@ -16,12 +16,12 @@ if ordering:
 ```http
 http://localhost/api/menu-items/?ordering=price
 
-# this return items ordered based on price (Asending)
+# this return items ordered based on price (Ascending)
 ```
 
 ## 💡 Note
-- the `ordering` function by default do **Asending**
-- to make it **Desending**. `http://localhost/api/menu-items/?ordering=-price`
+- the `ordering` function by default do **Ascending**
+- to make it **Descending**. `http://localhost/api/menu-items/?ordering=-price`
 
 ## 💡 Ordering with multiple fields
 1. create list hold the ordering fields
@@ -33,5 +33,5 @@ if ordering:
 ```http
 http://localhost/api/menu-items/?ordering=price,inventory
 
-# this sorting by price first and then by inventory (Asending)
+# this sorting by price first and then by inventory (Ascending)
 ```
