@@ -16,8 +16,10 @@ In `settings.py`, include `'rest_framework.authtoken'` in `INSTALLED_APPS`.
 ### 2. Generate a Token
 Generate a token for a user via the Django admin panel.
 
-### 3. Create a Protected API Endpoint
+### 3. Create a Protected API Endpoint with its url
 ```python
+#views.py
+
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.response import Response
@@ -26,6 +28,9 @@ from rest_framework.response import Response
 @permission_classes([IsAuthenticated])
 def secret(request):
     return Response("This is a secret message.")
+
+# urls.py
+path("secret", views.Secrect),
 ```
 ### 4. Configure DRF for Token-Based Authentication
 In `settings.py`, add the following:
