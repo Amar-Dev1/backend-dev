@@ -10,10 +10,9 @@
 ---
 
 ## 📑 Implementation Steps
-
 ### 1. Enable Token Authentication
 In `settings.py`, include `'rest_framework.authtoken'` in `INSTALLED_APPS`.
-
+- ❗ then make `migrations`
 ### 2. Generate a Token
 Generate a token for a user via the Django admin panel.
 
