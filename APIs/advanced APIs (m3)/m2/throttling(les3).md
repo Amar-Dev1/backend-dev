@@ -60,3 +60,10 @@ class TenCallsPerMinute(UserRateThrottle):
 ```python
 'ten':'10/minute'
 ```
+2. use it in the view
+   ```python
+   from .throttles import TenCallsPerMinute
+   ...
+   @Throttle_classes([TenCallsPerMinute])
+   ...
+   ```
