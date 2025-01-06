@@ -1,6 +1,6 @@
 # 📑 JWT in DRF
 
-JWT (JSON Web Token) is a compact, URL-safe token format used to securely transmit information between parties. It is commonly used for authentication in web applications.
+JWT (JSON Web Token) is a compact, URL-safe token format used to securely transmit information between parties. It is commonly used for authentication in web applications .
 
 ## 💡 How JWT Works
 1. **User Logs In**: The user sends their credentials (username and password) to the server.
