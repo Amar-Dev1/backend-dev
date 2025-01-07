@@ -13,11 +13,6 @@ provides a lot of features out of the box, such as authentication, permissioning
 #### 3. represent it to the client in `JSON` or `XML` format
 
 # 🔃 How to dowonload DRF (using pipenv)
-- after install pipenv. `pip install pipenv` :->
-1. install django . `pipenv install django`
-2. activate the virtual environment. `pipenv shell`
-3. creating django project and app
-4. install DRF `pipenv install djangorestframework`. make sure you are in the project folder ❗
-5. add `rest_framework` to INSTALLED_APPS.
-
-6. Happy develpoment ✅ 🎉
+1. activate the virtual environment. `pipenv shell`
+2. install DRF `pipenv install djangorestframework`. make sure you are in the project folder ❗
+3. add `rest_framework` to INSTALLED_APPS.

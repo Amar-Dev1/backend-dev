@@ -1,9 +1,9 @@
 # 📑Relationship serializers
 
 ## 🖋 Example
+### models.py
 ```python
 
-# models.py
 from django.db import models
 
 class Category(models.Model):
@@ -14,9 +14,9 @@ class MenuItem(models.Model):
     title = models.Charfield()
     price = models.DeciamlField()
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
-
-
-# serializers.py
+```
+### serializers.py
+```python
 ...
 
 class CategorySerializer(...):
@@ -30,10 +30,12 @@ class MenuItemSerializer(...):
     class Meta:
         ...
         fields = ['...',category]
-
-# views.py
-...
-# this is to display ..
-items = MenuItem.objects.select_related('category').all()
-
+```
+### views.py
+```python
+@api_view(['GET'])
+def menu_items(request):
+    items = MenuItem.objects.select_related('category').all()
+    serializer = MenuItemSerializer(items, many=True)
+    return Response(serializer.data)
 ```

@@ -7,7 +7,7 @@
 - 📝helps to keep your code organized and maintainable
 
 ## api_view response 🆚 normal django response
-- 📝 API view returns a response that is a dictionary with a specific structure
+- 📝 `@api_view` returns a response that is a dictionary with a specific structure
 - 📊 normal django response is a HttpResponse object
 
 
@@ -29,3 +29,4 @@ def books(request):
 
 ## passing HTTP methods to `api_view` 
 - `methods`: a list of HTTP methods that the view function allow and will accept it.
+- at least pass one http `methon` to `@api_view` => `@api_view(['GET'])` 

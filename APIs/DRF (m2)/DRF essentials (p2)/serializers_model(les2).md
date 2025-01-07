@@ -13,7 +13,7 @@ class MenuItemSerializer(serializers.SerializerModel):
 ```
 
 ## 🖋 Change field`s name 
-- 💡we can change the field`s name in the serializer by using the `source` parameter
+- 💡we can change the field name in the serializer by using the `source` parameter
 ```python
 from rest_framework import serializers
 from .models import MenuItem

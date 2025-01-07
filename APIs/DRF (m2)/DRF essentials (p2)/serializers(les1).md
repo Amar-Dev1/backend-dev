@@ -29,14 +29,15 @@ class MenuItemSerializer(serializers.Serializer):
 
 # views.py
 from rest_framework.decorators import api_view
+from rest_framework.response import Response
 from .serializers import MenuItemSerializer
 from .models import MenuItem
 
-@api_view
+@api_view(['GET'])
 def menu_item(request):
-    items= MenuItem.objects.all()
-    serialized_item = MenuItemSerializer(item,many=True)
-    return Response(serialized_item.data)
+    items = MenuItem.objects.all()
+    serializer = MenuItemSerializer(items, many=True) 
+    return Response(serializer.data)
 
     # many=True => is essential when converting a list into JSON data    
 ```

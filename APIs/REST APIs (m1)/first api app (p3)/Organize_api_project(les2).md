@@ -22,7 +22,6 @@
 - it also creates a requirements.txt file that lists all the dependencies of your project.
 
 ## 💡how to use pipenv
-- install pipenv using pip install pipenv
-- create a new project using pipenv install
-- install the dependencies using pipenv install
-- run the project using pipenv run python app.py
+- install pipenv using `pip install pipenv`
+- activate the virtual env `pipenv install`
+- install the dependencies using `pipenv install django`
