@@ -2,15 +2,15 @@
 
 - 💡 we can use `viewsets` to quick implement CRUD API endpoints
 
-# ❗ After installing `django-filter`
-## 📑Step 1 : `views.py`
+## ❗ After installing `django-filter`
+### 📑Step 1 : `views.py`
 ```python
 from rest_framework.response import Response from rest_framework import viewsets from .models import MenuItem from .serializers import MenuItemSerializer  
 class MenuItemsViewSet(viewsets.ModelViewSet):
     queryset = MenuItem.objects.all()
     serializer_class = MenuItemSerializer
 ```
-## 📑Step 2 : `urls.py`
+### 📑Step 2 : `urls.py`
 ```python
 from django.urls import path 
 from . import views 
@@ -19,7 +19,7 @@ urlpatterns = [
     path('menu-items/<int:pk>',views.MenuItemsViewSet.as_view({'get':'retrieve'})),
 ]
 ```
-## 📑Step 3 : `settings.py`
+### 📑Step 3 : `settings.py`
 ```python
 REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': [
@@ -53,7 +53,7 @@ class MenuItemsViewSet(viewsets.ModelViewSet):
 ```
 - 💡`PAGE_SIZE` property tells DRF how many items to show per page
 
-## 3️⃣ 
+## 3️⃣ Search
 - add `search_fields=['title']` in the `MenuItemsViewSet` class.
 ```python 
 class MenuItemsViewSet(viewsets.ModelViewSet):
