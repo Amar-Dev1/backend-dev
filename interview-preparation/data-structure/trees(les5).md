@@ -1,4 +1,4 @@
-# 🌳 Understanding Trees in Programming Languages
+# 🌳 Trees
 
 ## 🔍 What is a Tree?
 A **tree** is an **abstract data type (ADT)** that organizes data in a hierarchical structure. It consists of:

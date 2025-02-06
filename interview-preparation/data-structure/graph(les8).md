@@ -1,4 +1,4 @@
-# Understanding the Graph Data Structure 🌐
+# Graph 🌐
 
 ## What is a Graph? 🤔
 

@@ -1,4 +1,4 @@
-# Understanding the Heap Data Structure 🌳
+# Heap 🌳
 
 ## What is a Heap? 🤔
 
@@ -20,7 +20,7 @@ A heap can be of two types:
 Heaps are primarily used in situations where we need to efficiently access the **maximum** or **minimum** value in a collection of elements. This makes them useful for various real-world applications:
 
 1. **Priority Queue**: Heaps are ideal for implementing priority queues where elements with higher priority (or lower, depending on Min/Max heap) need to be processed first.
-2. **Heap Sort**: Heaps can be used to sort elements in O(n log n) time.
+2. **Heap Sort**: Heaps can be used to sort elements in `O(n log n)` time.
 3. **Dynamic Median Finding**: By maintaining a Max Heap for the smaller half of the elements and a Min Heap for the larger half, we can find the median in O(log n) time.
 4. **Efficient Scheduling**: For managing resources like CPU or memory in a system, where tasks with higher priority are executed first.
 
